@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 body{
@@ -18,7 +18,93 @@ section{
     background: white;
     border: solid 1px #ccc;
     border-radius: .5em;
-    height: 600px;
+    height: 700px;
     padding: 1em;
-    width: 1000px;
+    width: 1100px;
 }
+
+/** Typography **/
+h1,
+.h1{
+    font-size: 3.375em;
+    line-height: 1em;
+    margin: 0 0 0.47407407407407em 0;
+}
+
+h2,
+.h2{
+    font-size: 2.25em;
+    line-height: 1em;
+    margin: 0 0 0.71111111111111em 0;
+}
+
+h3,
+.h3{
+    font-size: 1.5em;
+    line-height: 1.06666666666667em;
+    margin: 0 0 1.06666666666667em 0;
+}
+
+h4,
+.h4{
+    font-size: 1em;
+    line-height: 1.6em;
+    margin: 0 0 1.6em 0;
+}
+
+h5,
+h6{
+    font-size: 0.667em;
+    line-height: 2.39880059970015em;
+    margin: 0 0 2.39880059970015em 0;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.6em;
+    margin: 0 0 1.6em 0;
+}
+
+ul,
+ol{
+    margin: 0 0 1.6em 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol{
+    margin: 0;
+}
+
+.code{
+    background: #424761;
+    border-radius: .2em;
+    color: #eee;
+    display: inline-block;
+    padding: 0 .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
