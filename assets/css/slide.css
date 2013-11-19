@@ -10,6 +10,7 @@ html{
 
 body{
     background: #eee;
+    color: #333;
     font: 200 1em sans-serif;
     line-height: 1.6em;
 }
@@ -19,7 +20,7 @@ section{
     border: solid 1px #ccc;
     border-radius: .5em;
     height: 700px;
-    padding: 1em;
+    padding: 2em;
     width: 1100px;
 }
 
@@ -83,6 +84,29 @@ ol ol{
     color: #eee;
     display: inline-block;
     padding: 0 .5em;
+}
+
+
+/** GRID **/
+
+[class^="col-"]{
+    float: left;
+}
+
+[class^="col-"] + [class^="col-"]{
+    margin-left: 2%;
+}
+
+.col-50{
+    width: 49%;
+}
+
+
+/** helpers **/
+.cf:after{
+    clear: both;
+    content: '';
+    display: table;
 }
 
 
