@@ -24,6 +24,66 @@ section{
     width: 1000px;
 }
 
+
+/** Navigation **/
+.nav{
+    background: #333;
+    border-right: solid 5px #369;
+    font-size: 16px;
+    height: 100%;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: 20%;
+    z-index: 9;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.nav--show{
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+.nav__trigger{
+    background: #369;
+    border: 0;
+    color: #eee;
+    display: block;
+    left: 100%;
+    outline: none;
+    padding: .5em 1.5em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.nav__menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__menu a{
+    border-bottom: solid 1px #000;
+    color: #eee;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.nav__menu a:hover{
+    background: #369;
+}
+
+
 /** Typography **/
 h1,
 .h1{

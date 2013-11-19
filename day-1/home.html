@@ -10,8 +10,21 @@
     <link rel="stylesheet" href="../assets/css/prism.css">
 </head>
 <body>
+    <nav class="nav">
+        <button class="nav__trigger">navigation</button>
+        <ul class="nav__menu">
+            <li><a href="#" data-goto="Hello">Front</a></li>
+            <li><a href="#" data-goto="introduction">Introduction</a></li>
+            <li><a href="#" data-goto="tools">Tools</a></li>
+            <li><a href="#" data-goto="agenda">Agenda</a></li>
+            <li><a href="#" data-goto="HTML">HTML</a></li>
+            <li><a href="#" data-goto="CSS">CSS</a></li>
+            <li><a href="#" data-goto="Javascript-using-jQuery">Javascript</a></li>
+        </ul>
+    </nav>
+
     <div id="impress">
-        <section class="step slide" data-x="0">
+        <section class="step slide" data-x="0" id="Hello">
             <h1>Front-end development</h1>
             <h2 class="h4">ITB Website Training, November 20th 2013</h2>
         </section>
@@ -33,7 +46,7 @@
             </div>
         </section>
 
-        <section class="step slide" data-x="3000">
+        <section class="step slide" data-x="3000" id="tools">
             <h2>Tools</h2>
 
             <ul>
@@ -54,6 +67,7 @@
                         </li>
                     </ul>
                 </li>
+                <li><a href="//www.dropbox.com/s/jufhb7vpzelnjle/template.zip">Template</a></li>
             </ul>
         </section>
 
@@ -65,7 +79,6 @@
                 <li>CSS</li>
                 <li>Javascript using <a href="//jquery.com/">jQuery</a> framework</li>
                 <li>Bootstrap 3</li>
-                <li><a href="//www.dropbox.com/s/jufhb7vpzelnjle/template.zip">Template</a></li>
             </ul>
         </section>
 
