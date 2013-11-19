@@ -19,9 +19,9 @@ section{
     background: white;
     border: solid 1px #ccc;
     border-radius: .5em;
-    height: 700px;
+    height: 650px;
     padding: 2em;
-    width: 1100px;
+    width: 1000px;
 }
 
 /** Typography **/
@@ -78,11 +78,16 @@ ol ol{
     margin: 0;
 }
 
+a{
+    color: #428bca;
+}
+
 .code{
     background: #424761;
     border-radius: .2em;
     color: #eee;
     display: inline-block;
+    font-size: .9em;
     padding: 0 .5em;
 }
 
@@ -107,6 +112,11 @@ ol ol{
     clear: both;
     content: '';
     display: table;
+}
+
+.mega-size{
+    font-size: 30px;
+    line-height: 1.4em;
 }
 
 
