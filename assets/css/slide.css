@@ -114,8 +114,16 @@ a{
     width: 28.6%;
 }
 
+.col-40{
+    width: 38.8%;
+}
+
 .col-50{
     width: 49%;
+}
+
+.col-60{
+    width: 59.2%;
 }
 
 .col-70{
@@ -132,6 +140,11 @@ a{
     clear: both;
     content: '';
     display: table;
+}
+
+.mini-size{
+    font-size: 18px;
+    line-height: 1.4em;
 }
 
 .mega-size{

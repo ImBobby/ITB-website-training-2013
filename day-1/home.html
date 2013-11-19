@@ -141,9 +141,50 @@
 
 &lt;span onclick="javascript:alert();"&gt;Hello&lt;/span&gt;</code></pre>
                 </div>
-            </div>
+            </div>  
+        </section>
 
+        <section class="step slide" data-x="6000" data-y="4000">
+            <h2>HTML inputs</h2>
+
+            <div class="grid cf">
+                <div class="col-60">
+                    <pre><code class="language-markup">&lt;input type="text" name="" id=""&gt;
+&lt;input type="email"&gt;
+&lt;input type="number"&gt;
+&lt;input type="password"&gt;
+&lt;input type="date"&gt;
+&lt;select&gt;
+    &lt;option value=""&gt;options&lt;/option&gt;
+    &lt;option value=""&gt;options&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type="checkbox"&gt;
+&lt;input type="radio"&gt;</code></pre>
+                </div>
+                <div class="col-40">
+                    <input type="text" placeholder="text">
+                    <input type="email" placeholder="email">
+                    <input type="number" placeholder="number">
+                    <input type="password" placeholder="password">
+                    <input type="date" name="" id="">
+                    <br>
+                    <select name="" id="">
+                        <option value="">select</option>
+                        <option value="">options</option>
+                    </select>
+                    <input type="checkbox"> checkbox
+                    <input type="radio"> radio
+
+                    <hr>
                     
+                    Reference
+
+                    <ul>
+                        <li><a href="//diveintohtml5.info/forms.html">Dive into HTML5</a></li>
+                        <li><a href="//developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">MDN</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section class="step slide" data-x="7500" data-y="0">
@@ -172,8 +213,89 @@
 }</code></pre>
                 </div>
             </div>
+
+            <hr>
+
+            <div class="grid cf">
+                <div class="col-50">
+                    <pre><code class="language-markup">&lt;button class="btn"&gt;Hello&lt;/button&gt;</code></pre>
+                    <p>Change the text color to red</p>                  
+                </div>
+                <div class="col-50">
+                    <pre><code class="language-css">.btn{
+    color: red;
+}</code></pre>
+                </div>
+            </div>
         </section>
-    </div>
+
+        <section class="step slide" data-x="7500" data-y="3000">
+            <h2>CSS Selectors</h2>
+
+            <div class="grid cf">
+                <div class="col-30">
+                    <ul>
+                        <li>Type selector</li>
+                        <li>Class selector</li>
+                        <li>ID selector</li>
+                        <li>Universal selector</li>
+                        <li>Attribute selector</li>
+                        <li>Combinators
+                            <ul>
+                                <li>Descendant</li>
+                                <li>Child</li>
+                                <li>Adjacent sibling</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    Reference
+                    <ul>
+                        <li><a href="//www.w3.org/TR/css3-selectors/#descendant-combinators">W3</a></li>
+                        <li><a href="//developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors">MDN</a></li>
+                    </ul>
+
+                    
+                </div>
+                <div class="col-30">
+                    <pre class="mini-size"><code class="language-css">button{ /* Type */
+    color: red;
+}
+
+.btn{ /* Class */
+    color: red;
+}
+
+#btn{ /* ID */
+    color: red;
+}
+
+*{ /* Universal */
+    margin: 0;
+}</code></pre>
+                </div>
+                <div class="col-40">
+                    <pre class="mini-size"><code class="language-css">[class="col"]{ /* Attribute */
+    margin: 0;
+}
+
+ul li{ /* Descendant */
+    margin: 0;
+}
+
+ul > li{ /* Child */
+    margin: 0;
+}
+
+li + li{ /* Adjacent sibling */
+    margin-left: .5em;
+}</code></pre>
+                </div>
+            </div>
+
+                    
+        </section>
+    </div> <!-- /#impress -->
 
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/impress.js"></script>
