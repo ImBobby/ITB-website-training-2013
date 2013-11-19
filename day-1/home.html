@@ -16,7 +16,7 @@
             <h2 class="h4">ITB Website Training, November 20th 2013</h2>
         </section>
 
-        <section class="step slide" data-x="1500">
+        <section class="step slide" data-x="1500" id="introduction">
             <div class="grid cf">
                 <div class="col-50">
                     <img src="../assets/img/me.jpg" alt="">
@@ -57,7 +57,7 @@
             </ul>
         </section>
 
-        <section class="step slide" data-x="4500">
+        <section class="step slide" data-x="4500" id="agenda">
             <h2>Agenda</h2>
 
             <ul>
@@ -69,7 +69,7 @@
             </ul>
         </section>
 
-        <section class="step slide" data-x="6000">
+        <section class="step slide" data-x="6000" id="HTML">
             <h1>HTML</h1>
             <h2 class="h3">Hypertext Markup Language</h2>
         </section>
@@ -189,7 +189,7 @@
             </div>
         </section>
 
-        <section class="step slide" data-x="7500" data-y="0">
+        <section class="step slide" data-x="7500" data-y="0" id="CSS">
             <h1>CSS</h1>
             <h2 class="h3">Cascading Style Sheet</h2>
         </section>
@@ -319,7 +319,7 @@ li + li{ /* Adjacent sibling */
             <a href="//developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN</a> - <a href="//cdpn.io/p/IApgH">demo</a>
         </section>
 
-        <section class="step slide" data-x="9000" data-y="0">
+        <section class="step slide" data-x="9000" data-y="0" id="Javascript-using-jQuery">
             <h2>Javascript using jQuery</h2>
         </section>
 
@@ -347,6 +347,115 @@ li + li{ /* Adjacent sibling */
                 <li>DOM manipulation</li>
                 <li>DOM traversing</li>
                 <li>Event handler</li>
+                <li>Effects</li>
+                <li><a href="//api.jquery.com/">More...</a></li>
+            </ul>
+        </section>
+
+        <section class="step slide" data-x="9000" data-y="3000">
+            <h2>Basic structure</h2>
+
+            <div class="grid cf">
+                <div class="col-50">
+                    <p>Before</p>
+                    <pre><code class="language-javascript">$(document).ready(function () {
+    // code goes here
+});</code></pre>
+                </div>
+                <div class="col-50">
+                    <p>Now</p>
+                    <pre><code class="language-javascript">var Site = {
+    init: function () {
+        // code goes here
+    }
+};
+
+$(function () {
+    Site.init();
+});</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="step slide" data-x="9000" data-y="4000">
+            <pre><code class="language-javascript">var Site = {
+    init: function () {
+        Site.googleMapApi();
+    },
+
+    googleMapApi: function () {
+        // scary shit code
+    }
+};
+
+$(function () {
+    Site.init();
+});</code></pre>
+
+            <a href="//jsbin.com/EfUseYE/1/watch?html,js,output">demo</a>
+        </section>
+
+        <section class="step slide" data-x="9000" data-y="5000">
+            <h2>jQuery: <a href="//api.jquery.com/category/manipulation/">DOM manipulation</a></h2>
+
+            Most used API:
+            <ul>
+                <li>.addClass()</li>
+                <li>.hasClass()</li>
+                <li>.attr()</li>
+                <li>.remove()</li>
+                <li>.css()</li>
+            </ul>
+        </section>
+
+        <section class="step slide" data-x="9000" data-y="6000">
+            <h2>jQuery: <a href="//api.jquery.com/category/traversing/">Traversing</a></h2>
+
+            Most used API:
+            <ul>
+                <li>.parent()</li>
+                <li>.prev()</li>
+                <li>.next()</li>
+                <li>.siblings()</li>
+                <li>.find()</li>
+            </ul>
+        </section>
+
+        <section class="step slide" data-x="9000" data-y="7000">
+            <h2>jQuery: <a href="//api.jquery.com/category/events/">Event handler</a></h2>
+
+            <ul>
+                <li>Mouse events
+                    <ul>
+                        <li>.click()</li>
+                        <li>.hover()</li>
+                    </ul>
+                </li>
+                <li>Keyboard events
+                    <ul>
+                        <li>.keyup()</li>
+                    </ul>
+                </li>
+                <li>Browser events
+                    <ul>
+                        <li>.resize()</li>
+                        <li>.scroll()</li>
+                    </ul>
+                </li>
+                <li>Etc.</li>
+            </ul>
+        </section>
+
+        <section class="step slide" data-x="9000" data-y="8000">
+            <h2>jQuery: <a href="//api.jquery.com/category/effects/">Effects</a></h2>
+
+            <ul>
+               <li>.fadeIn()</li>
+               <li>.fadeOut()</li>
+               <li>.slideDown()</li>
+               <li>.slideUp()</li>
+               <li>.show()</li>
+               <li>.hide()</li>
             </ul>
         </section>
     </div> <!-- /#impress -->
