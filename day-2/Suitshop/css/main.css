@@ -1,0 +1,448 @@
+/*******************************************************************************
+
+    Title :  
+    Date  :  September 2013
+    Author:  Suitmedia (http://www.suitmedia.com)
+
+********************************************************************************
+
+    1. Resets
+    2. Basic styles
+    3. Font-face
+    4. Header
+    5. Page styles
+    6. Footer
+    7. Prints
+    8. Helpers
+    9. Plugins
+
+*******************************************************************************/
+
+/* 1. Resets
+ ---------------------------------------------------------------------------- */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+address{
+    font-style: normal;
+}
+
+table{
+    width: 100%;
+}
+
+.chromeframe {
+    background: #FFD17D;
+    border-bottom: solid 1px #FFCC6F;
+    color: #222;
+    font-size: .8em;
+    margin: 0 0 .2em;
+    padding: .4em 0;
+    text-align: center;
+}
+
+::-moz-selection {
+    background: #ade5ff;
+    color: #222;
+    text-shadow: none;
+}
+
+::selection {
+    background: #ade5ff;
+    color: #222;
+    text-shadow: none;
+}
+
+
+/* 2. Basic Styles
+ ---------------------------------------------------------------------------- */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    color: #222;
+    font-family: sans-serif;
+    line-height: 1.6em;
+}
+
+a{
+    color: #82caff;
+    text-decoration: none;
+
+    &:hover,
+    &:focus{
+        color: #72b3e5;
+    }
+}
+
+label, 
+input, 
+button, 
+select, 
+textarea {
+    font-family: sans-serif;
+}
+
+
+/* 3. Font-face
+ ---------------------------------------------------------------------------- */
+
+
+
+/* 4. Header
+ ---------------------------------------------------------------------------- */
+
+.header-main{
+    background: url(../img/bg-pattern.png);
+    padding-bottom: 30px;
+}
+
+.user-action{
+    background: #dc3a62;
+    margin-bottom: 30px;
+}
+
+.user-action ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.user-action li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.user-action a{
+    color: white;
+}
+
+
+
+
+.nav-main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.nav-main li{
+    display: inline-block;
+}
+
+.nav-main ul li:first-child a{
+    border-radius: 10px 0 0 10px;
+}
+
+.nav-main ul li:last-child a{
+    border-radius: 0 10px 10px 0;
+}
+
+.nav-main a{
+    background: white;
+    border-bottom: solid 3px lightgray;
+    color: #222;
+    display: block;
+    padding: 20px;
+}
+
+.logo{
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+/*.user-action{
+    background: #dc3a62;
+}
+
+.user-action ul{
+    list-style: none;
+}
+
+.user-action ul li{
+    display: inline-block;
+}
+*/
+
+/* 5. Page Styles
+ ---------------------------------------------------------------------------- */
+
+.product-grid{
+    color: #222;
+    display: block;
+    position: relative;
+}
+
+.product-grid:hover{
+    text-decoration: none;
+    color: #6692c7;
+}
+
+.product-grid img{
+    width: 100%;
+}
+
+.product-grid span{
+    background: rgba(255,255,255,.7);
+    display: inline-block;
+    padding: .5em 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.product-grid p{
+    text-align: center;
+}
+
+
+/* 6. Footer
+ ---------------------------------------------------------------------------- */
+
+
+
+/* 7. Print
+ ---------------------------------------------------------------------------- */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: .5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+/* 8. Helpers
+ ---------------------------------------------------------------------------- */
+
+.list-nostyle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus{
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: '';
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.list-inline > li{
+    display: inline-block;
+}
+
+.lt-ie8 .list-inline > li{
+    display: inline;
+}
+
+
+
+/* 9. Plugins
+ ---------------------------------------------------------------------------- */
+
+
+
+
+.tes [class^="col-"]{
+    background: black;
+    padding: 1em;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
