@@ -51,6 +51,40 @@
             </ul>
         </section>
 
+        <section class="step slide" data-x="3000">
+            <h2>Pseudo element</h2>
+
+            <pre><code class="language-css">selector:before{
+    property: value;
+}
+
+selector:after{
+    property: value;
+}</code></pre>
+        </section>
+
+        <section class="step slide" data-x="4500">
+            <h2>Pseudo element example</h2>
+
+            <h3 class="h1">Rp. 150.000,-</h3>
+
+            <pre class="mega-size"><code class="language-markup">&lt;span&gt;Rp. 150.000,-&lt;/span&gt;</code></pre>
+        </section>
+
+        <section class="step slide" data-x="6000">
+            <h3 class="h1">Rp. 150.000,-</h3>
+
+            <pre><code class="language-markup">&lt;span&gt;150.000&lt;/span&gt;</code></pre>
+
+            <pre><code class="language-css">span:before{
+    content: 'Rp. ';
+}
+
+span:after{
+    content: ',-';
+}</code></pre>
+        </section>
+
         
     </div> <!-- /#impress -->
 
